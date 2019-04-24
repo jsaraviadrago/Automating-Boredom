@@ -2,4 +2,5 @@
 
 - Puntos de corte
 - Naming objects
-- Correcting examns
+- Correcting exams
+- Cleaning text data
