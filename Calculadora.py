@@ -11,9 +11,9 @@ segplata = float(segplata)
 if segplata != 0:
     platados = input('Poner segundo importe mensual\n')
     platados = float(platados)
-    respuesta = ((plata+platados)*(mes+bono+gratificacion))/14
+    respuesta = ((plata+platados)*(mes+bono+gratificacion))/12
 else:
-   respuesta = (plata*(mes+bono+gratificacion))/14
+   respuesta = (plata*(mes+bono+gratificacion))/12
 
 print(respuesta)
 
