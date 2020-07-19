@@ -25,13 +25,20 @@ if y == '':
 else:
     y = y
 
+
 n = input('Cantidad de filas\n')
-# The default value is 30
-if n == '':
-    n = '30'
+try:
+    thenum = int(n)
+    if thenum == 0:
+        n = 2
+    else:
+        n = int(n)
+except ValueError:
+    print("Not a valid number default assigned")
+    n = int(30)
 else:
-    n = n
-n = int(n)
+   n = int(n)
+
 
 for i in range(1,n):
     z = (x + str(i).ljust(1) + y)
