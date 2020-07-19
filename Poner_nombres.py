@@ -13,17 +13,20 @@ lista = []
 print('Hola! Vamos a nombrar cosas')
 
 x = input('Que cosa quieres nombrar\n')
+# The default value is item
 if x == '':
     x = 'Item'
 else:
     x = x
 y = input('Con que lo quieres separar\n')
+# The default value is a plus
 if y == '':
     y = '+'
 else:
     y = y
 
 n = input('Cantidad de filas\n')
+# The default value is 30
 if n == '':
     n = '30'
 else:
