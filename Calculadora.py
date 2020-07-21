@@ -1,19 +1,28 @@
+
+
 plata = input('Poner aca el importe mensual\n')
-plata = float(plata)
+try:
+    plata = float(plata)
+except ValueError:
+    print("Tienes que poner en numero\n")
+    plata = input('Poner aca el importe mensual\n')
+    plata = float(plata)
+else:
+    plata = float(plata)
+
 mes = float(12)
 gratificacion = float(2)
-bono = input('Cuantos bonos tienes\n')
-bono = float(bono)
-
-segplata = input('Poner la cantidad de trabajos adicionales\n')
-segplata = float(segplata)
-
-if segplata != 0:
-    platados = input('Poner segundo importe mensual\n')
-    platados = float(platados)
-    respuesta = ((plata+platados)*(mes+bono+gratificacion))/12
+bono = input('Poner número de bonos\n')
+try:
+    bono = float(bono)
+except ValueError:
+    print("Tienes que poner un numero")
+    bono = input('Poner número de bonos\n')
+    bono = float(bono)
 else:
-   respuesta = (plata*(mes+bono+gratificacion))/12
+    bono = float(bono)
+
+respuesta = (plata*(mes+bono+gratificacion))/12
 
 print(respuesta)
 
