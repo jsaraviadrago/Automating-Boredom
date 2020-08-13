@@ -6,7 +6,7 @@ gmail_user = 'jsaraviadrago'
 gmail_password = 'chipigrafijc96'
 
 sent_from = 'jsaraviadrago@gmail.com'
-to = 'jsaraviad@alicorp.com.pe'
+to = 'juliocesar@hospitapp.pe'
 subject = 'Friendly reminder'
 body = 'Este es solo un friendly reminder. \n\n JC'
 
