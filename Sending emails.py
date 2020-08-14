@@ -9,7 +9,7 @@ sent_from = 'name@gmail.com'
 to = 'mail@mail.pe'
 subject = 'Friendly reminder'
 body = 'Este es solo un friendly reminder. \n\n JC'
-
+# Spanish words cant have punctuation marks.
 email_text = '''Subject: {}\n\n{}
 From: %s
 To: %s
