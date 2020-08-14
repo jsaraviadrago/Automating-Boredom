@@ -2,11 +2,11 @@
 
 import smtplib
 
-gmail_user = 'jsaraviadrago'
-gmail_password = 'chipigrafijc96'
+gmail_user = 'user'
+gmail_password = 'password'
 
-sent_from = 'jsaraviadrago@gmail.com'
-to = 'juliocesar@hospitapp.pe'
+sent_from = 'name@gmail.com'
+to = 'mail@mail.pe'
 subject = 'Friendly reminder'
 body = 'Este es solo un friendly reminder. \n\n JC'
 
