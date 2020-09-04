@@ -1,5 +1,5 @@
 import subprocess as subp
-filename = "/Users/home/Documents/Allicorp/R2M/R2M_CMP.jpeg"
+filename = "filepath_and_filename"
 subp.call(['open', filename])
 
 
