@@ -1,0 +1,209 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% "ModernCV" CV and Cover Letter
+% LaTeX Template
+% Version 1.1 (9/12/12)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Xavier Danaux (xdanaux@gmail.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important note:
+% This template requires the moderncv.cls and .sty files to be in the same 
+% directory as this .tex file. These files provide the resume style and themes 
+% used for structuring the document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[10pt,a4paper,sans, unicode]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
+%\usepackage{hyperref}
+\moderncvstyle{classic} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+\usepackage{ragged2e} % Justify paragraph
+\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+
+\usepackage[scale=0.85, top=5mm, bottom=10mm]{geometry} % Reduce document margins
+\setlength{\hintscolumnwidth}{1.55cm} % Uncomment to change the width of the dates column
+%\setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION SECTION
+%----------------------------------------------------------------------------------------
+
+\firstname{\huge{\textbf{Juan Carlos}}} % Your first name
+\familyname{\textbf{Saravia }} % Your last name
+
+% All information in this block is optional, comment out any lines you don't need
+%\title{Curriculum Vitae}
+%\address{}{}
+\mobile{+51980424164}
+%\phone{(000) 111 1112}
+%\fax{(000) 111 1113}
+\email{jsaraviadrago@gmail.com}
+\homepage{linkedin.com/in/jcsaraviadrago/}
+ % The first argument is %the url for the clickable link, the second argument is the url displayed in the %template - this allows special characters to be displayed such as the tilde in this %example
+%\extrainfo{researchgate.net/profile/Juan\_Carlos\_Saravia}
+\extrainfo{jsaraviadrago.com}
+%\photo[70pt][0.4pt]{picture} % The first bracket is the picture height, the second is %the thickness of the frame around the picture (0pt for no frame)
+\quote{\large{Data science, Psychology. \\ Machine Learning and Psychometrics. \\ +11 years of experience in analytics}}
+
+%----------------------------------------------------------------------------------------
+\renewcommand{\baselinestretch}{1.25} 
+
+\begin{document}
+
+\makecvtitle % Print the CV title
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+\justifying
+\section{Education}
+
+\cventry{2014-2015}{Master in Statistics} {Cum Laude}{\textit{Scholarship CTB Belgium}}{Katholieke Universiteit Leuven \textbf{Belgium}}{}{}
+% Arguments not required can be left empty
+\cventry{2013}{Master in Clinical health psychology}{}{\textit{Summa cum laude}}{\textit{PAIP winner} Universidad Católica del Perú}{}{}{}
+\cventry{2010}{Psychology} {Summa Cum Laude}{Universidad Católica del Perú}{}{}
+
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Experience}
+\begin{itemize}
+\cventry{2020 - TD}{Advanced Analytics Manager}{\small{Alicorp}}{Consumer Goods Company}{}{\item Led the Micro Segmentation project that brought a revenue of +62.5 MM USD from 2020 up to August 2021 \item Managed a team of +12 people including Data Scientist and Engineers to analyze and deploy models for +90K clients \item Teamed up with experience-design and product-strategy teams using agile methods and OKRs to make 4 apps at scale \item Led the implementation of a Data Lake and the data infrastructure for a new digital business from August 2021 TD}{}
+
+\cventry{2016 - TD}{Founder}{\small{Matemáticamente posible}}{Sports analytics blog and Data Science Consulting Company}{}{\item With data discovered the hidden strategy behind Peru's soccer team success to reach the World Cup after +30 years \item Modeled +4 predictive models and insights about client satisfaction, student's career path and teacher achievement \item Guided a team to make +6 questionnaires and psychometric modelling to further understand client behavior}{}
+
+\cventry{2018-2020}{Director of Data Analytics}{\small{Innova schools}}{Network of Private Schools}{}{\item Led a team of +5 to evangelize good data practice. Developed 4 dashboards for business and educational outcomes \item Designed the first predictive modelling in the company which reduced churn in 7\% and motivated a data driven culture \item Trained a team of 5 people to develop coding skills with \textsc{R} to reduce reporting work time from 2 weeks to 3 days \item Successfully trained a team of +5 in analytic skills reducing 5K USD on projects done by external companies}{}
+
+\cventry{2015-2018}{Psychometrics}{\small{Ministry of Education. Measurement of Educational Quality Office (UMC)}}{}{}{\item Led the PISA study in Perú (2014) and developed 2 national studies (1 MM students) for internal stakeholders}
+%\item Author of +3 studies that were published in a national educational journal
+%\item Responsable de fomentar el uso de software como Python, \LaTeX, MLwiN y Network analysis.
+
+\cventry{2012-2015}{Data Researcher}{\small Universidad Católica and UNMSM Tropical medicine institute}{}{}{\item Co-author of +8 papers. Successfully trained a team of 3 people in coding practices with \textsc{R}}
+
+%\cventry{2012-2013}{Data Researcher}{}{\small{\textit{UNMSM. Instituto de medicina tropical}}}{}{  \item Author of 3 papers.}
+
+%\cventry{2011-2012}{Investigador y Supervisor de %campo}{\small{UPCH. Crónicas: Centro de Excelencia en %Investigación}}{}{}{ \item Responsable de evaluar plataformas %tecnológicas para usarlas en una intervención innovadora con %mensajería de texto.
+%\item Construí herramientas, capacit\'e y dirig\'i a %encuestadores que concluyeron el trabajo de campo 2 meses antes %de la fecha.}
+\end{itemize}
+
+%----------------------------------------------------------------------------------------
+%	COMPUTER SKILLS SECTION
+%----------------------------------------------------------------------------------------
+\section{Teaching}
+
+\begin{small}
+\cventry{2018}{Postgraduate teacher}{\small Centrum - MBA and University of Engineering and Technology (UTEC)}{}{}{Tools for managerial decisions and Storytelling with Data} 
+
+\cventry{2010-2019}{Undergraduate teacher}{\small Universidad de Lima and Universidad Católica Psychology}{}{}{Statistics, research methods, positive psychology and thesis supervisor \href{https://researchgate.net/profile/Juan\_Carlos\_Saravia}{ \underline{+12 research papers}}}
+%+90\% de aprobación en el dictado de clases.
+
+%\cventry{2010-2017}{Docente pregrado}{\small{PUCP. Facultad de %Psicología}}{}{}{ Docente de los cursos de métodos de %investigación, estadística 1 y 2, psicología positiva y general %y supervisor de tesis.}
+%y +90\% de aprobación en el dictado de clases.
+%Supervisor de tesis: +80\% de tesis sustentadas
+
+\end{small}
+
+\section{Additional information}
+\begin{small}
+
+\cvitem{Talks} {\href{https://www.youtube.com/watch?v=w2bFtUVihrs}{\underline{Ted Talk}: How did Peru reach the World Cup.}
+{\href{https://www.youtube.com/watch?v=kC85LBaDUZo&t=1s}{\underline{Pechakucha}: Matematicamente posible}}}
+
+
+\cvitem{Projects} {\href{https://statssos.net}{\underline{Statistics blog}: explaining stats to everyone in simple terms.}
+Developer of the R package in Github:  {\href{https://github.com/jsaraviadrago/bluegrafir}{\underline{Bluegrafir}}}}
+
+
+%\cvitem{}{\href{https://statssos.net}{\underline{Stats blog}: creé un blog para hacer la estadística accesible para todos.} Jefe de psicología en Executive search (CL,PE).}
+\cvitem{Languages}{English, French and Spanish}
+\cvitem{Courses}{Applied Data Science with Python, Machine Learning, Data Science Foundations, SQL and Business Metrics}
+
+%\cvitem{Voluntariado}{Fundación ANAR: psicólogo para intervención en crisis. ONG Minkando} %generando espacios de desarrollo alternativo en Ayacucho}
+\cvitem{Interests}{Soccer and Running. Training to run 21K in less than 1 hour and 40 minutes}
+\cvitem{Skills}{Machine Learning, Psychometrics, Multilevel modelling, Item Response Theory, Rasch, SQL, R and Python} 
+\end{small}
+%Networking site for scientists
+%innovación
+
+%----------------------------------------------------------------------------------------
+%	LANGUAGES SECTION
+%----------------------------------------------------------------------------------------
+
+%\section{Idiomas}
+%\begin{small}
+
+%\cvitemwithcomment{}{Bayesian statistics (Monte Carlo), Football analytics: \href{http://www.facebook.com/matematicamenteposible/}{\underline{Matemáticamente posible.com}} Blogger: \href{https://statssos.net}{\underline{Stats SOS.com}}}{}{}
+%\cvitemwithcomment{}{Deportes (Maratones y Fútbol). Trekking. Cocina}{}{}
+%\end{small}
+
+
+%----------------------------------------------------------------------------------------
+%	INTERESTS SECTION
+%----------------------------------------------------------------------------------------
+%\bigskip
+
+%\section{Premios y certificaciones}
+%\begin{small}
+%\cvitemwithcomment{2013-2014}{}{}{}
+%\cvitemwithcomment{2017}{Programming for Everybody in Python}{}{}
+%\end{small}
+%\cvlistdoubleitem{Robotics}{}
+
+%Ganador \href{http://investigacion.pucp.edu.pe/convocatoria/programa-apoyo-investigacion-para-estudiantes-de-posgrado-paip/}{PAIP}
+%----------------------------------------------------------------------------------------
+%	COVER LETTER
+%----------------------------------------------------------------------------------------
+% To remove the cover letter, comment out this entire block
+
+
+%\clearpage
+
+%\recipient{HR Department}{Twitter\\San Francisco, USA} % Letter recipient
+%\date{\today} % Letter date
+%\opening{Dear Sir or Madam,} % Opening greeting
+
+%\closing{Sincerely yours,} % Closing phrase
+%\enclosure[Attached]{curriculum vit\ae{}} % List of enclosed documents
+
+%\makelettertitle % Print letter title
+%\justifying
+
+
+
+
+%\begin{itemize}
+
+%\item  
+
+%\item 
+
+%\item  
+
+%\end{itemize}
+
+
+
+
+%\makeletterclosing % Print letter signature
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
+
+%----------------------------------------------------------------------------------------
+
+
+
+
