@@ -10,5 +10,14 @@ data_garmin = data_garmin[['Activity Type', 'Date',	'Distance',	'Calories',	'Tim
 
 data_garmin = data_garmin.loc[data_garmin['Activity Type'] == 'Running']
 
+# create an intermediate column that we won't store on the DataFrame
+checkout_as_datetime = pd.to_datetime(data_garmin['Date'])
 
-print(data_garmin)
+# Add the desired columns to the dataframe
+data_garmin['run_date'] = checkout_as_datetime.dt.date
+data_garmin['run_time'] = checkout_as_datetime.dt.time
+data_garmin['run_year'] = checkout_as_datetime.dt.year
+
+data_garmin = data_garmin.drop('Date', axis=1)
+
+print(data_garmin.head())
