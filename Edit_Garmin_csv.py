@@ -18,6 +18,6 @@ data_garmin['run_date'] = checkout_as_datetime.dt.date
 data_garmin['run_time'] = checkout_as_datetime.dt.time
 data_garmin['run_year'] = checkout_as_datetime.dt.year
 
-data_garmin = data_garmin.drop('Date', axis=1)
+data_garmin = data_garmin.drop(['Activity Type', 'Date'], axis=1)
 
 print(data_garmin.head())
