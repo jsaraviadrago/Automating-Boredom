@@ -20,4 +20,4 @@ data_garmin['run_year'] = checkout_as_datetime.dt.year
 
 data_garmin = data_garmin.drop(['Activity Type', 'Date'], axis=1)
 
-print(data_garmin.head())
+data_garmin.to_csv('C:\\Users\\JuanCarlosSaraviaDra\\Dropbox\\Activities_garmin_VF.csv', index=False)
