@@ -1,6 +1,7 @@
 import requests
 import pandas as pd
 from bs4 import BeautifulSoup
+from io import StringIO
 
 # This scrapper was made to retrieve all teams in peru from Wikiepdia.
 
@@ -16,7 +17,7 @@ tables = soup.find_all(
 for table in tables:
     for tag in table.select('[style="display:none"]'):
         tag.extract()
-    df = pd.read_html(str(table))[0]
+    df = pd.read_html(StringIO(str(table)))[0]
     df['Region'] = table.find_previous(["h3","h2"]).span.text
     dfs.append(df)
 
