@@ -23,13 +23,15 @@
 %	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
 %----------------------------------------------------------------------------------------
 
-\documentclass[10pt,a4paper,sans, unicode]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
-
+\documentclass[10pt,a4paper, sans, unicode]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
+%\usepackage{hyperref}
 \moderncvstyle{classic} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
 \moderncvcolor{blue} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
-
+\usepackage{ragged2e} % Justify paragraph
+\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
 \usepackage[utf8]{inputenc}
-%\usepackage{hyperref}
+
+\usepackage{lmodern}
 
 \usepackage[scale=0.85, top=5mm, bottom=10mm]{geometry} % Reduce document margins
 \setlength{\hintscolumnwidth}{1.55cm} % Uncomment to change the width of the dates column
@@ -40,11 +42,11 @@
 %----------------------------------------------------------------------------------------
 
 \firstname{\huge{\textbf{Juan Carlos}}} % Your first name
-\familyname{\textbf{Saravia Drago}} % Your last name
+\familyname{\textbf{Saravia }} % Your last name
 
 % All information in this block is optional, comment out any lines you don't need
 %\title{Curriculum Vitae}
-%\address{La Joya 132}{Santiago de Surco, Lima}
+%\address{}{}
 \mobile{+51980424164}
 %\phone{(000) 111 1112}
 %\fax{(000) 111 1113}
@@ -52,9 +54,9 @@
 \homepage{linkedin.com/in/jcsaraviadrago/}
  % The first argument is %the url for the clickable link, the second argument is the url displayed in the %template - this allows special characters to be displayed such as the tilde in this %example
 %\extrainfo{researchgate.net/profile/Juan\_Carlos\_Saravia}
-\extrainfo{jsaraviadrago.com}
+\extrainfo{https://github.com/jsaraviadrago}
 %\photo[70pt][0.4pt]{picture} % The first bracket is the picture height, the second is %the thickness of the frame around the picture (0pt for no frame)
-\quote{\large{Data science, Psychology. \\ Machine Learning and Psychometrics. \\ +11 years of experience in analytics}}
+\quote{\large{Ciencia de datos, Psicología. \\ Aprendizaje automático,  IA y Psicometría. \\ +13 años de experiencia en analytics}}
 
 %----------------------------------------------------------------------------------------
 \renewcommand{\baselinestretch}{1.25} 
@@ -66,62 +68,89 @@
 %----------------------------------------------------------------------------------------
 %	EDUCATION SECTION
 %----------------------------------------------------------------------------------------
-
+\justifying
 \section{Educación}
 
-\cventry{2014-2015}{Master en Estad\'istica} {Cum Laude}{\textit{Beca CTB Belga}}{Katholieke Universiteit Leuven. \textbf{Bélgica}}{}{}
+\cventry{2014-2015}{Master en Estadística} {Cum Laude}{\textit{Becario CTB Bélgica}}{Katholieke Universiteit Leuven \textbf{Bélgica}}{}{}
 % Arguments not required can be left empty
-\cventry{2013}{Master en Psicolog\'ia Cl\'inica de la Salud}{}{\textit{Tesis sobresaliente}}{\textit{Ganador PAIP.} PUCP}{}{}{}
-\cventry{2010}{Licenciatura en Psicología} {Tesis sobresaliente}{PUCP}{}{}
+\cventry{2013}{Master Psicología clínica y de la Salud}{}{\textit{Summa Cum Laude}}{\textit{Ganador PAIP} Universidad Católica del Perú}{}{}{}
+\cventry{2010}{Psicología} {Summa Cum Laude}{Universidad Católica del Perú}{}{}
+
+%----------------------------------------------------------------------------------------
+%	Projects and advisories
+%----------------------------------------------------------------------------------------
+\section{Consultorías \& Proyectos}
+
+\begin{small}
+\cventry{2016- TD}{Fundador: Asesor de Data  Analytics \& Científico de Decisiones}{\small Calkulaba}{}{}{Desarrollando un proyecto de datos sintéticos utilizando GenAI, para enriquecer y mejorar el rendimiento de los modelos. \\ Modelé +8 modelos predictivos de deserción de clientes, aprendizajes de estudiantes y resultados de la Copa del Mundo. \\ Dirigí la implementación de Data Lakes (AWS) y soluciones de inteligencia artificial en múltiples sectores. \\
++10 proyectos psicométricos para salud, educación y recursos humanos. Desarrollé un paquete de R en GitHub: {\href{https://github.com/jsaraviadrago/bluegrafir}{\underline{Bluegrafir}}}
+}{}
+
+
+%\cventry{2016- TD}{Founder - Content creator}{\small Matemáticamente posible}{}{}{With data discovered the hidden strategy behind Peru's soccer team success to reach the World Cup after +30 years. Book writer: mathematically possible, football data \& analytics, 2022 world cup analysis and predictions}{}
+
+\cventry{2024- TD}{Psicometrista}{\small Assessment Systems Corporation}{Consultor}{}{Analicé la construcción del banco de ítems de las pruebas para garantizar su correcta implementación.}{}
+
+\cventry{2018- TD}{Escritor \& Creador de cursos y contenidos digitales académicos}{\small Matemáticamente posible}{}{}{{\href{https://www.planetadelibros.com.pe/libro-matematicamente-posible/356850}{\underline{Autor del libro "Matemáticamente Posible:}  Data de Fútbol \& Analítica," una exploración de la Copa del Mundo 2022.}} \\
+{\href{https://statssos.wordpress.com/}{\underline{Blog de Estadística}: enfocado en simplificar conceptos de estadística para el público en general. Desarrollando el Ebook. }}
+}{}
+
+
+
+%\cventry{2010-2017}{Docente pregrado}{\small{PUCP. Facultad de %Psicología}}{}{}{ Docente de los cursos de métodos de %investigación, estadística 1 y 2, psicología positiva y general %y supervisor de tesis.}
+%y +90\% de aprobación en el dictado de clases.
+%Supervisor de tesis: +80\% de tesis sustentadas
+
+\end{small}
 
 
 %----------------------------------------------------------------------------------------
 %	WORK EXPERIENCE SECTION
 %----------------------------------------------------------------------------------------
 
-\section{Experiencia}
+\section{Experiencia corporativa}
 \begin{itemize}
 
-\cventry{2022 - act}{Head Data y Analytics}{\small{Innova schools}}{\small{Lider de analítica}}{}{\item Lideré la migración del Data Warehouse al Data Lake de +190 tablas  \item Lideré la elaboración de la estrategia de datos para toda la organización \item Elaboré un diagnóstico donde detecté +10 casos de uso de datos para la organización}{}
+\cventry{2023-2024}{Data  Analytics \& Gerente de Experimentación}{\small{Olimpo.bet}}{Compañía de juegos digital}{}{\item Dirigí la migración de más de 400 tablas e implementé la nueva arquitectura de Data Lake en AWS. \item Supervisé el despliegue de +150 nuevas implementaciones en el informe de la aplicación web y su migración a AWS. \item Lideré una cultura de experimentación, implementando +5 experimentos mensuales en los departamentos. \item Lideré la iniciativa de GenAI, identificando +5 casos de uso para su aplicación en ventas, producto y atención al cliente. \item Inicié un proyecto de reconocimiento facial destinado a detectar a clientes que podrían estar cometiendo fraude.} {}
 
+\cventry{2022-2023}{Gerente de Data \& Analytics}{\small{Innova schools}}{Red privada de colegios}{}{\item Diseñé la estrategia de datos, desarrollé +50 paneles de control e identifiqué 10 casos de uso para resultados de ingresos. \item Desarrollé el modelo operativo, implementé la estrategia de datos y lideré la capacitación de +26 embajadores de datos. \item Lideré la migración de más de 190 tablas de un Data Warehouse al Data Lake implementado en Google Cloud Platform.}{}
 
-\cventry{2016 - act}{Founder}{\small{Matemáticamente posible}}{\small{Sports analytics blog and Data Science Consultancy}}{}{\item Con data descubrí las estrategias de la selección peruana para clasificar al mundial 2018 \item Produje +4 modelos predictivos e insights sobre el desempeño y el comportamiento de los clientes \item Guié un equipo para la elaboración de +6 cuestionarios y modelos psicométricos para el comportamiento de los clientes}{}
+%\item Successfully identified 10 use cases of data and analytics to increase revenue generate efficiencies
 
-\cventry{2020-2022}{Advanced Analytics Manager}{\small{Alicorp}}{\small{Empresa de cosumo masivo}}{}{\item Lideré el proyecto de Micro Segmentación que trajo 250M de Nuevos Soles peruanos en revenue entre 2020 y 2021 \item Lideré un equipo de +12 personas de Data para elaborar y poner en producción modelos con +90K clientes \item Trabajé con equipos de experience-design y product-strategy utilizando metodologías ágiles, OKRS para hacer 4 apps \item Lideré la implementación de un Data Lake y la infraestructura de datos para un nuevo negocio digital }{}
-%\item . \item . \item .
+\cventry{2020-2022}{Data  Analytics \& Gerente de Experimentación}{\small{Alicorp}}{Empresa de consumo masivo}{}{\item Dirigí el proyecto de Micro Segmentación en GCP, generando ingresos de +62.5 millones de USD (2020 a agosto 2021). \item Gestioné +15 científicos de datos e ingenieros para implementar +10 modelos en GCP para +90,000 clientes. \item Dirigí la implementación de la nueva arquitectura de Data Lake para el canal de ventas digitales (E-Commerce) en AWS.}{}
 
-\cventry{2018-2020}{Director de Data analytics for educational quality}{\small{INNOVA schools}}{}{}{\item Lideré +5 personas en buenas prácticas de data para la implementación de Dashboards para indicadores educativos \item Lideré la producción del primer modelo que redujo 7\% el churn  e impulsé una cultura de data driven decisions \item Entrené a 5 personas en el uso de código que redujo el tiempo de elaboración de procesos de 2 semanas a 3 días \item Entrené con éxito a un equipo de 5 personas en técnicas analíticas para reducir 5K USD en trabajos con proveedores}{}
+%\item Teamed up with experience-design and product-strategy teams using agile methods and OKRs to make 4 apps at scale
 
-\cventry{2015-2018}{Psicometría y Factores Asociados}{\small{Ministerio de Educaci\'on. Medición de la calidad de los aprendizajes (UMC)}}{}{}{\item Lideré el estudio de PISA (2014)y desarrollé 2 estudios nacionales con 1M estudiantes para stakeholders internos }
-%\item A cargo de producir +3 estudios científicos que fueron publicados en revistas de educación a nivel nacional.
-%\item Lideré los análisis de resultados de oportunidades de aprendizaje en PISA presentados a stakeholders internos y externos.
+\cventry{2018-2020}{Director de Data Analytics \& Psicometría}{\small{Innova schools}}{Red privada de colegios}{}{\item Diseñé el primer modelo predictivo, reduciendo la tasa de churn en un 7\% y promoviendo una cultura de datos. \item Formé con éxito a un equipo de +5 personas en habilidades analíticas, ahorrando 5K USD en proyectos subcontratados.}{}
+
+\cventry{2015-2018}{Psicometrista}{\small{Ministerio de Educación}}{}{}{\item Creé 3 informes nacionales de educación utilizando análisis Rasch, modelado multinivel y de ecuaciones estructurales.}{}
+
+%\cventry{2015-2018}{Psychometrics}{\small{Ministry of Education. Measurement of Educational Quality Office (UMC)}}{}{}{\item Led the PISA study in Perú (2014) and developed 2 national studies (1 MM students) for internal stakeholders}
+%\item Author of +3 studies that were published in a national educational journal
 %\item Responsable de fomentar el uso de software como Python, \LaTeX, MLwiN y Network analysis.
 
-%\cventry{2013-2015}{Data Researcher}{\small PUCP}{}{}{\item A cargo de los análisis de resultados para estudios en salud pública. Co-autor de +5 artículos en revistas cient\'ificas. \item Responsable de fomentar la utilización del software \textsc{R}.}
+%\cventry{2012-2015}{Data Researcher}{\small Universidad Católica and UNMSM Tropical medicine institute}{}{}{\item Co-author of +8 papers. Successfully trained a team of 3 people in coding practices with \textsc{R}}
 
-\cventry{2012-2013}{Data Researcher}{}{\small{\textit{ Universidad Catolica and UNMSM. Instituto de medicina tropical}}}{}{  \item Co-Autor  de +8 artículos científicos y entrené 3 personas en prácticas del uso de código.}
-
-%\item Lideré el análisis de resultados con bases de datos nacionales en salud pública (Software estadístico: \textsc{R} y SPSS).
+%\cventry{2012-2013}{Data Researcher}{}{\small{\textit{UNMSM. Instituto de medicina tropical}}}{}{  \item Author of 3 papers.}
 
 %\cventry{2011-2012}{Investigador y Supervisor de %campo}{\small{UPCH. Crónicas: Centro de Excelencia en %Investigación}}{}{}{ \item Responsable de evaluar plataformas %tecnológicas para usarlas en una intervención innovadora con %mensajería de texto.
 %\item Construí herramientas, capacit\'e y dirig\'i a %encuestadores que concluyeron el trabajo de campo 2 meses antes %de la fecha.}
 \end{itemize}
 
 %----------------------------------------------------------------------------------------
-%	COMPUTER SKILLS SECTION
+%	Additional information
 %----------------------------------------------------------------------------------------
-\section{Docencia}
+
+
+%\section{Projects and Entreprenueur}
 
 \begin{small}
-\cventry{2018}{Docente posgrado}{\small Centrum - MBA y Universidad de Ingeniería y Tecnología (UTEC)}{}{}{Herramientas para la toma de decisiones Gerenciales y Storytelling con data} 
+%\cventry{2016- TD}{Founder - Data advisor}{\small Calkulaba}{}{}{Modeled +8 predictive models and insights on client churn, student's career path and odds of winning the world cup. Led the deployment of a chatbot and the implementation of a Data Lake in a payment company. \\ Led the implementation of a data lake arquitecture in a financial transactions company}{}
 
-\cventry{2010-2019}{Docente pregrado}{\small Universidad de Lima. Facultad de psicología y PUCP. Facultad de Psicología }{}{}{Estadística, métodos de investigación, psicología experimental y supervisor de tesis.\href{https://researchgate.net/profile/Juan\_Carlos\_Saravia}{ \underline{+12} artículos científicos.}}
-%+90\% de aprobación en el dictado de clases.
 
-%\cventry{2010-2017}{Docente pregrado}{\small{PUCP. Facultad de %Psicología}}{}{}{ Docente de los cursos de métodos de %investigación, estadística 1 y 2, psicología positiva y general %y supervisor de tesis.}
-%y +90\% de aprobación en el dictado de clases.
-%Supervisor de tesis: +80\% de tesis sustentadas
-
+%\cventry{2018- TD}{Book writer - content creator}{\small Matemáticamente posible}{}{}{With data found insights about Peru's soccer team success to reach the 2018 World Cup after +30 years. \\{\href{https://www.planetadelibros.com.pe/libro-matematicamente-posible/356850}{\underline{Book writer}: Mathematically possible, football data \& analytics, 2022 world cup analysis and predictions.}} \\
+%{\href{https://statssos.wordpress.com/}{\underline{Statistics blog}: explaining stats to everyone in simple terms.}}
+%Developer of the R package in Github:  {\href{https://github.com/jsaraviadrago/bluegrafir}{\underline{Bluegrafir}}}}{}
 
 
 
@@ -131,20 +160,26 @@
 \section{Información adicional}
 \begin{small}
 
-\cvitem{Charlas} {\href{https://www.ted.com/talks/juan_carlos_saravia_por_que_peru_pudo_ir_al_mundial}{\underline{Ted Talk:} Cómo Perú llegó a la copa del mundo}
-{\href{https://www.youtube.com/watch?v=kC85LBaDUZo&t=1s}{\underline{Peckakucha:} Matemáticamente posible}}}
+\cvitem{Charlas} {\href{https://www.youtube.com/watch?v=w2bFtUVihrs}{\underline{Charla Ted}: Cómo con datos Perú logró volver a la Copa del Mundo}
+{\href{https://www.youtube.com/watch?v=kC85LBaDUZo&t=1s}{\underline{Charla Pechakucha}: Matemáticamente posible}}}
 
-\cvitem{Proyectos} {\href{https://statssos.net}{\underline{Stats blog}: statistics blog.}
-{\href{https://github.com/jsaraviadrago/bluegrafir}{\underline{Bluegrafir}: R package in Github.}}}
+
+%\cvitem{Projects} {\href{https://statssos.net}{\underline{Statistics blog}: explaining stats to everyone in simple terms.}
+%Developer of the R package in Github:  {\href{https://github.com/jsaraviadrago/bluegrafir}{\underline{Bluegrafir}}}}
+
+\cvitem{Docencia}{+10 años Posgrado \& Pregrado: Estadística, Métodos de Investigación, Toma de decisiones y análisis con datos}
 
 
 %\cvitem{}{\href{https://statssos.net}{\underline{Stats blog}: creé un blog para hacer la estadística accesible para todos.} Jefe de psicología en Executive search (CL,PE).}
-\cvitem{Idiomas}{Inglés, Francés y Español}
-\cvitem{Certificados}{Applied Data science with Python, Machine Learning, Data Science foundations, SQL and Business metrics}
+%\cvitem{Languages}{English, French and Spanish}
+%\cvitem{Courses}{Applied Data Science with Python, Machine Learning, Data Science Foundations, SQL and Business Metrics}
 
 %\cvitem{Voluntariado}{Fundación ANAR: psicólogo para intervención en crisis. ONG Minkando} %generando espacios de desarrollo alternativo en Ayacucho}
-\cvitem{Intereses}{Fútbol y Running: entrenando para correr 21K en menos de 1 hora y 40 minutos}
-\cvitem{Aptitudes}{Machine learning, Modelos multinivel, Psicometría, Teoría Respuesta al Ítem, Rasch analysis, R y Python} 
+%\cvitem{Interests}{Running. Training to run 21K in less than 2 hours}
+\cvitem{Habilidades}{Conocimientos en negocios, inteligencia artificial, psicometría (IRT, Rasch, SEM), modelado multinivel, SQL, R, Python.} 
+
+%\cvitem{Certificates}{} 
+
 \end{small}
 %Networking site for scientists
 %innovación
@@ -177,33 +212,49 @@
 %----------------------------------------------------------------------------------------
 %	COVER LETTER
 %----------------------------------------------------------------------------------------
-
 % To remove the cover letter, comment out this entire block
 
-%\clearpage
 
-%\recipient{HR Departmnet}{Corporation\\123 Pleasant Lane\\12345 City, State} % Letter recipient
+\clearpage
+
+
+%\recipient{HR Department}{Yale\\New Haven, USA} % Letter recipient
 %\date{\today} % Letter date
 %\opening{Dear Sir or Madam,} % Opening greeting
 
-%	Juan Carlos Saravia Drago, 
-	
-%	Psicólogo, master en estadística (Bélgica) y master en psicología de la salud. Especializado en Data Analytics, Predictive Models y Psicometrics. Con experiencia liderando la construcción de modelos predictivos para empresas innovadoras, educación y salud. 
-	
-%	Curioso y autodidacta. Me apasiona utilizar Data - machine learning y predictive modelling- para generar insights que permitan replantear las estrategias de negocio.
-	
-%	Como hobby, elaboro estadística deportiva usando Big data, tengo una página de fútbol llamada Matemáticamente posible y otra página (Stats SOS) para enseñar estadística de manera sencilla y comunicable. 
-
-
-%\closing{Sincerely yours,} % Closing phrase
-%\enclosure[Attached]{curriculum vit\ae{}} % List of enclosed documents
-
 %\makelettertitle % Print letter title
 
-%\lipsum[1-3] % Dummy text
+%Being Data Scientist would be a fantastic opportunity for me. I am a Psychologist and Data Scientist that has more than 12 years of experience doing this field. I have worked in Education, Health and I have worked with business teams to make their ideas and projects run at scale. 
+%My Psychology background has helped me develop a close relationship with the business teams and help them think about really understand what they are interested on and how to help them. 
+
+%I am highly motivated on working in Yale, and contribute on developing  models on public health. Since my background in psychology is specifically in Health Psychology I have worked with teams on the whole pipeline of the research process. Some examples of this are:
+
+%\begin{itemize}
+%\item  Making the research design and collecting all the necessary data to make the models
+%\item Elaborate research questions, experimental designs in health regarding how SMS message could reinforce people to make health behaviors such as eating healthy meals and doing exercise. 
+%\item  Create multilevel models and machine learning models to understand what variables are more related to healthy behaviors\\
+%\end{itemize} 
+
+ %I love coding. I am worked on an R package called bluegrafir, named after my cats that makes psychometrics reports easier to do. Also I had blog since 2014 that has increased in yearly visits since it's birth. Stats SOS aimed to help people understand statistics better and accessible to everybody. Furthermore, I have more than 12 years of experience as a researcher, using quantitative and qualitative methods that would be very helpful to gather the necessary information to understand what industry data scientists are seeking from a product. 	
+
+%Therefore, my experience working with diverse teams, provide data science support at different project stages and strategic planning would be very helpful to improve reporting and think systematically on how to communicate the big picture.
+
+
+%I know that my broad experience in data science,  my joy with R and Python programming, strategy and my psychology background that has helped become a good mentor and leader will allow me to contribute successfully to Yale. Thank you in advance for your consideration and look forward from hearing from you soon. 
+
+%\closing{Sincerely yours,} % Closing phrase
+
+%\enclosure[Attached]{curriculum vitae{}} % List of enclosed documents
+
+%\justifying
 
 %\makeletterclosing % Print letter signature
 
 %----------------------------------------------------------------------------------------
 
 \end{document}
+
+%----------------------------------------------------------------------------------------
+
+
+
